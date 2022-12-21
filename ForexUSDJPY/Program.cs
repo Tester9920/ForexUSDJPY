@@ -35,7 +35,7 @@ namespace WinFormsApp1
             var client = new RestClient("https://webull.p.rapidapi.com/stock/get-realtime-quote");
             var request = new RestRequest();
             request.AddParameter("tickerId", "913344317");
-            request.AddHeader("X-RapidAPI-Key", "6f08843f16mshaf45b1699c913c6p17be52jsn2e29e2aaed78");
+            request.AddHeader("X-RapidAPI-Key", rapidapikey);
             request.AddHeader("X-RapidAPI-Host", "webull.p.rapidapi.com");
 
             var price = client.Get<ForexData>(request).close;
