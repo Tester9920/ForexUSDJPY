@@ -13,7 +13,6 @@ namespace WinFormsApp1
             timer.Start();
         }
 
-
         public void RefreshLabelEvent()
         {
             Decimal oldquote = Decimal.Parse(label1.Text);
