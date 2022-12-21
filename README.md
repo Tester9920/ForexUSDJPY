@@ -8,4 +8,4 @@ Features:
 - Separated Configuration file for RapidAPI key entry (Config.xml)
 
 Usage:
-Place "Config.xml" in the same directory as the program is and put a RapidAPI key in this file before running the program.
+Place "Config.xml" in the same directory as the program is and put a RapidAPI key in that file before running the program.
