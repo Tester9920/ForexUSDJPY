@@ -30,7 +30,7 @@ namespace WinFormsApp1
         public static string ForexDataClient()
         {
             XElement configXML = XElement.Load(@"./Config.xml");
-            var rapidapikey = configXML.Elements("General").Elements("X-RapidAPI-Key");
+            var rapidapikey = (string)configXML.Element("X-RapidAPI-Key");
 
             var client = new RestClient("https://webull.p.rapidapi.com/stock/get-realtime-quote");
             var request = new RestRequest();
@@ -42,12 +42,5 @@ namespace WinFormsApp1
 
             return price;
         }
-
-       public static void parseConfigXML()
-        {
-
-        }
     }
-
-
 }
